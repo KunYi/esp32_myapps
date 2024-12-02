@@ -21,13 +21,6 @@ This project demonstrates the Ethernet functionality on the W32-ETH01 developmen
 - IO16 is used to enable the 50MHz clock required for Ethernet operation
 - The project initializes the Ethernet PHY and establishes network connectivity
 
-## Known Issues
-
-- Link Status Instability: The Ethernet connection may experience intermittent Link Up/Down states, which appears to be a design limitation of WT32-ETH01 board
-- Network Performance:
-  - Successfully obtains IP address via DHCP when stable
-  - Operating at 10Mbps Ethernet speed
-  - Connection stability may vary between different boards
 
 ### Log Output
 ```
