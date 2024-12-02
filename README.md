@@ -13,6 +13,12 @@ This repository contains my personal collection of ESP32 applications and test p
 - Based on ESP-IDF ethernet example
 - Known issues with Link stability at 10Mbps
 
+### `duino_ethernet/`
+- Arduino version of W32-ETH01 Ethernet test
+- Same hardware configuration as ESP-IDF version
+- Simplified implementation using Arduino framework
+- Stable Ethernet connectivity with LAN8720
+
 ## Development Frameworks
 
 The applications in this repository are developed using:
