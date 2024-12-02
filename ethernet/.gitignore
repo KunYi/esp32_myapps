@@ -1,0 +1,31 @@
+# ESP-IDF specific
+build/
+sdkconfig.old
+dependencies.lock
+
+# Build output directories
+managed_components/
+bootloader/
+partition_table/
+
+# IDE specific
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Debug files
+*.log
+coredump.dump
+
+# Project specific
+sdkconfig.ci
+sdkconfig.defaults
+
+# OS specific
+.DS_Store
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db

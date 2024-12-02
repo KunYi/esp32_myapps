@@ -2,10 +2,16 @@
 
 This repository contains my personal collection of ESP32 applications and test projects. These applications are developed using both ESP-IDF framework and Arduino framework.
 
-## Repository Structure
+## Projects
 
-- `w2812/`: WS2812 LED control application
-- ... (more applications to be added)
+### `w2812/`
+- WS2812 LED control application
+
+### `ethernet/`
+- W32-ETH01 Ethernet test application
+- Tests LAN8720 Ethernet PHY functionality
+- Based on ESP-IDF ethernet example
+- Known issues with Link stability at 10Mbps
 
 ## Development Frameworks
 
@@ -18,9 +24,9 @@ The applications in this repository are developed using:
 
 Each subdirectory is a standalone application with its own documentation and configuration. Please refer to the specific instructions in each project directory for running and using these applications.
 
-## Licensing
+## License
 
-Each application may use different license terms. Please refer to the LICENSE file in each project directory for specific licensing information.
+Each project has its own license. Please refer to the LICENSE file in each project directory for specific licensing information.
 
 ## Contributing
 
