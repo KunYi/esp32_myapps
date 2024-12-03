@@ -10,8 +10,7 @@
 #define ETH_PHY_ADDR  1
 #define ETH_PHY_MDC   23
 #define ETH_PHY_MDIO  18
-#define ETH_PHY_CLK   16
-#define ETH_PHY_POWER -1
+#define ETH_PHY_POWER 16
 #define ETH_CLK_MODE  ETH_CLOCK_GPIO0_IN
 #endif
 
@@ -71,10 +70,7 @@ void testClient(const char *host, uint16_t port) {
 
 void setup() {
   Serial.begin(115200);
-  pinMode(ETH_PHY_CLK, OUTPUT);
-  digitalWrite(ETH_PHY_CLK, HIGH);
   Network.onEvent(onEvent);
-  delay(200);
   ETH.begin();
 }
 
