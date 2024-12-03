@@ -11,7 +11,6 @@ This repository contains my personal collection of ESP32 applications and test p
 - W32-ETH01 Ethernet test application
 - Tests LAN8720 Ethernet PHY functionality
 - Based on ESP-IDF ethernet example
-- Known issues with Link stability at 10Mbps
 
 ### `duino_ethernet/`
 - Arduino version of W32-ETH01 Ethernet test

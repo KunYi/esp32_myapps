@@ -75,6 +75,8 @@ static esp_eth_handle_t eth_init_internal(esp_eth_mac_t **mac_out, esp_eth_phy_t
     // Update vendor specific MAC config based on board configuration
     esp32_emac_config.smi_gpio.mdc_num = CONFIG_EXAMPLE_ETH_MDC_GPIO;
     esp32_emac_config.smi_gpio.mdio_num = CONFIG_EXAMPLE_ETH_MDIO_GPIO;
+    esp32_emac_config.clock_config.rmii.clock_mode = EMAC_CLK_EXT_IN;
+    esp32_emac_config.clock_config.rmii.clock_gpio = 0; // ESP32 only support IO0
 #if CONFIG_EXAMPLE_USE_SPI_ETHERNET
     // The DMA is shared resource between EMAC and the SPI. Therefore, adjust
     // EMAC DMA burst length when SPI Ethernet is used along with EMAC.
